@@ -1,0 +1,782 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600;700;800&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li,
+a {
+  text-decoration: none;
+  list-style: none;
+}
+
+.nav__imgs {
+  width: 24px;
+  height: 24px;
+}
+
+body {
+  background-color: #dce0e4;
+  /* background-color: white; */
+  font-family: "Roboto Slab", serif;
+}
+
+.nav {
+  display: flex;
+  background-color: rgb(12, 148, 211);
+  height: 70px;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid white;
+}
+
+.nav__container {
+  display: flex;
+  width: 100%;
+}
+
+.nav-header__list {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.nav-header__links {
+  display: flex;
+}
+
+.nav__links {
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  transition: all ease-in-out 0.3s;
+  align-items: center;
+  display: flex;
+  column-gap: 10px;
+}
+
+.nav__links:hover {
+  color: rgb(45, 45, 51);
+}
+
+.background__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  background: url("http://www.osmais.com/wallpapers/201809/praia-mar-azul-wallpaper.jpg");
+  background-position: center;
+  border-bottom: 1px solid white;
+}
+
+/* === ABOUT === ABOUT === ABOUT === ABOUT === ABOUT === ABOUT === ABOUT === ABOUT === ABOUT === */
+
+.about {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.about__info {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.about__title {
+  color: rgb(12, 148, 211);
+  font-size: 32px;
+  font-weight: 800;
+}
+
+.about_description {
+  word-spacing: 5px;
+  line-height: 24px;
+}
+
+/* === SECTION RENT === SECTION RENT === SECTION RENT === SECTION RENT === SECTION RENT === SECTION RENT === */
+
+.rent__img {
+  width: 300px;
+  height: 300px;
+  border-radius: 100px;
+  transition: ease-in-out all 0.3s;
+}
+
+.rent__img:hover {
+  border-radius: 15px;
+  /* transition: ease-in-out all 0.3s; */
+}
+
+.rent-title__container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.rent__title {
+  color: rgb(12, 148, 211);
+  font-size: 32px;
+  font-weight: 800;
+  border-bottom-style: solid;
+}
+
+.rent__list {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+  gap: 16px;
+}
+
+.rent-list__links {
+  display: grid;
+  justify-items: center;
+  border-radius: 30px;
+  padding: 10px;
+  cursor: pointer;
+  row-gap: 10px;
+  border: 3px solid #f2f2f2;
+  background-color: rgb(212, 214, 216);
+}
+
+/* .rent-list__links:hover {
+  background-color: rgb(185, 195, 204);
+  transition: ease-in-out all 0.5s;
+} */
+
+.rent-price__img {
+  font-size: 24px;
+  color: rgb(12, 148, 211);
+}
+
+/* === SECTION LEASE === SECTION LEASE === SECTION LEASE === SECTION LEASE === SECTION LEASE === SECTION LEASE === */
+
+.lease__img {
+  width: 300px;
+  height: 300px;
+  border-radius: 100px;
+  transition: ease-in-out all 0.3s;
+}
+
+.lease__img:hover {
+  border-radius: 15px;
+}
+
+.lease-title__container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.lease__title {
+  color: rgb(12, 148, 211);
+  font-size: 32px;
+  font-weight: 800;
+  border-bottom-style: solid;
+}
+
+.lease__list {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+  gap: 16px;
+}
+
+.lease-list__links {
+  display: grid;
+  justify-items: center;
+  border-radius: 30px;
+  padding: 10px;
+  cursor: pointer;
+  row-gap: 10px;
+  border: 3px solid #f2f2f2;
+  background-color: rgb(212, 214, 216);
+}
+
+.lease-price__img {
+  font-size: 24px;
+  color: rgb(12, 148, 211);
+}
+
+/* === SECTION SALE === SECTION SALE === SECTION SALE === SECTION SALE === SECTION SALE === SECTION SALE === */
+
+.sale__img {
+  width: 300px;
+  height: 300px;
+  border-radius: 100px;
+  transition: ease-in-out all 0.3s;
+}
+
+.sale__img:hover {
+  border-radius: 15px;
+}
+
+.sale-title__container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.sale__title {
+  color: rgb(12, 148, 211);
+  font-size: 32px;
+  font-weight: 800;
+  border-bottom-style: solid;
+}
+
+.sale__list {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+  gap: 16px;
+}
+
+.sale-list__links {
+  display: grid;
+  justify-items: center;
+  border-radius: 30px;
+  padding: 10px;
+  cursor: pointer;
+  row-gap: 10px;
+  border: 3px solid #f2f2f2;
+  background-color: rgb(212, 214, 216);
+}
+
+.sale-price__img {
+  font-size: 24px;
+  color: rgb(12, 148, 211);
+}
+
+/* === FOOTER === FOOTER === FOOTER === FOOTER === FOOTER */
+
+.footer {
+  background-color: rgb(12, 148, 211);
+  height: 70px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer_description {
+  color: white;
+  font-size: 24px;
+}
+
+/* === ANIMATION SCROLL */
+
+.animation__scroll {
+  opacity: 0;
+  transform: translate3d(-500px, 0, 0);
+  transition: 0.7s;
+}
+
+.animation__scroll.ativo {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+/* === MEDIA QUERIES === MEDIA QUERIES ===  MEDIA QUERIES === MEDIA QUERIES === MEDIA QUERIES === */
+
+@media (max-width: 790px) {
+  /* === ABOUT === ABOUT === ABOUT */
+
+  .about__info {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(12, 148, 211);
+    height: 200px;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid white;
+  }
+
+  .nav__container {
+    display: flex;
+    width: 100%;
+  }
+
+  .nav-header__list {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .nav-header__links {
+    display: flex;
+  }
+
+  .nav__links {
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    align-items: center;
+    display: flex;
+    column-gap: 10px;
+  }
+}
+
+@media (max-width: 730px) {
+  /* === ABOUT === ABOUT === ABOUT */
+
+  .about__info {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* === RENT === RENT === RENT */
+
+  .rent__img {
+    width: 200px;
+    height: 200px;
+    border-radius: 70px;
+    /* transition: ease-in-out all 0.3s; */
+  }
+
+  .rent-title__container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .rent__title {
+    color: rgb(12, 148, 211);
+    font-size: 32px;
+    font-weight: 800;
+    border-bottom-style: solid;
+  }
+
+  .rent__list {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+    gap: 16px;
+  }
+
+  .rent-list__links {
+    display: grid;
+    justify-items: center;
+    border-radius: 30px;
+    padding: 10px;
+    row-gap: 10px;
+    border: 3px solid #f2f2f2;
+    background-color: rgb(212, 214, 216);
+  }
+
+  .rent-price__img {
+    font-size: 24px;
+    color: rgb(12, 148, 211);
+  }
+
+  /* LEASE === LEASE === LEASE === LEASE === */
+
+  .lease__img {
+    width: 200px;
+    height: 200px;
+    border-radius: 70px;
+    /* transition: ease-in-out all 0.3s; */
+  }
+
+  .lease-title__container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .lease__title {
+    color: rgb(12, 148, 211);
+    font-size: 32px;
+    font-weight: 800;
+    border-bottom-style: solid;
+  }
+
+  .lease__list {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+    gap: 16px;
+  }
+
+  .lease-list__links {
+    display: grid;
+    justify-items: center;
+    border-radius: 30px;
+    padding: 10px;
+    row-gap: 10px;
+    border: 3px solid #f2f2f2;
+    background-color: rgb(212, 214, 216);
+  }
+
+  .lease-price__img {
+    font-size: 24px;
+    color: rgb(12, 148, 211);
+  }
+
+  /* SALE === SALE === SALE === SALE === */
+
+  .sale__img {
+    width: 200px;
+    height: 200px;
+    border-radius: 70px;
+    /* transition: ease-in-out all 0.3s; */
+  }
+
+  .sale-title__container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .sale__title {
+    color: rgb(12, 148, 211);
+    font-size: 32px;
+    font-weight: 800;
+    border-bottom-style: solid;
+  }
+
+  .sale__list {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+    gap: 16px;
+  }
+
+  .sale-list__links {
+    display: grid;
+    justify-items: center;
+    border-radius: 30px;
+    padding: 10px;
+    row-gap: 10px;
+    border: 3px solid #f2f2f2;
+    background-color: rgb(212, 214, 216);
+  }
+
+  .sale-price__img {
+    font-size: 24px;
+    color: rgb(12, 148, 211);
+  }
+}
+
+@media (max-width: 600px) {
+  /* === ABOUT === ABOUT === ABOUT */
+
+  .about__info {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* === RENT === RENT === RENT */
+
+  .rent__img {
+    width: 200px;
+    height: 200px;
+    border-radius: 70px;
+    /* transition: ease-in-out all 0.3s; */
+  }
+
+  .rent-title__container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .rent__title {
+    color: rgb(12, 148, 211);
+    font-size: 32px;
+    font-weight: 800;
+    border-bottom-style: solid;
+  }
+
+  .rent__list {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+    gap: 16px;
+  }
+
+  .rent-list__links {
+    display: grid;
+    justify-items: center;
+    border-radius: 30px;
+    padding: 10px;
+    row-gap: 10px;
+    border: 3px solid #f2f2f2;
+    background-color: rgb(212, 214, 216);
+    width: 400px;
+  }
+
+  .rent-price__img {
+    font-size: 24px;
+    color: rgb(12, 148, 211);
+  }
+
+  /* LEASE === LEASE === LEASE === LEASE === */
+
+  .lease__img {
+    width: 200px;
+    height: 200px;
+    border-radius: 70px;
+    /* transition: ease-in-out all 0.3s; */
+  }
+
+  .lease-title__container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .lease__title {
+    color: rgb(12, 148, 211);
+    font-size: 32px;
+    font-weight: 800;
+    border-bottom-style: solid;
+  }
+
+  .lease__list {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+    gap: 16px;
+  }
+
+  .lease-list__links {
+    display: grid;
+    justify-items: center;
+    border-radius: 30px;
+    padding: 10px;
+    row-gap: 10px;
+    border: 3px solid #f2f2f2;
+    background-color: rgb(212, 214, 216);
+    width: 400px;
+  }
+
+  .lease-price__img {
+    font-size: 24px;
+    color: rgb(12, 148, 211);
+  }
+
+  /* SALE === SALE === SALE === SALE === */
+
+  .sale__img {
+    width: 200px;
+    height: 200px;
+    border-radius: 70px;
+    /* transition: ease-in-out all 0.3s; */
+  }
+
+  .sale-title__container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .sale__title {
+    color: rgb(12, 148, 211);
+    font-size: 32px;
+    font-weight: 800;
+    border-bottom-style: solid;
+  }
+
+  .sale__list {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+    gap: 16px;
+  }
+
+  .sale-list__links {
+    display: grid;
+    justify-items: center;
+    border-radius: 30px;
+    padding: 10px;
+    row-gap: 10px;
+    border: 3px solid #f2f2f2;
+    background-color: rgb(212, 214, 216);
+    width: 400px;
+  }
+
+  .sale-price__img {
+    font-size: 24px;
+    color: rgb(12, 148, 211);
+  }
+}
+
+@media (max-width: 575px) {
+  /* === ABOUT === ABOUT === ABOUT */
+
+  .about__info {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* === RENT === RENT === RENT */
+
+  .rent__img {
+    width: 150px;
+    height: 150px;
+    border-radius: 70px;
+    /* transition: ease-in-out all 0.3s; */
+  }
+
+  .rent-title__container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .rent__title {
+    color: rgb(12, 148, 211);
+    font-size: 32px;
+    font-weight: 800;
+    border-bottom-style: solid;
+  }
+
+  .rent__list {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 16px;
+  }
+
+  .rent-list__links {
+    display: grid;
+    justify-items: center;
+    border-radius: 30px;
+    padding: 10px;
+    row-gap: 10px;
+    border: 3px solid #f2f2f2;
+    background-color: rgb(212, 214, 216);
+    width: 200px;
+  }
+
+  .rent-price__img {
+    font-size: 24px;
+    color: rgb(12, 148, 211);
+  }
+
+  /* LEASE === LEASE === LEASE === LEASE === */
+
+  .lease__img {
+    width: 150px;
+    height: 150px;
+    border-radius: 70px;
+    /* transition: ease-in-out all 0.3s; */
+  }
+
+  .lease-title__container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .lease__title {
+    color: rgb(12, 148, 211);
+    font-size: 32px;
+    font-weight: 800;
+    border-bottom-style: solid;
+  }
+
+  .lease__list {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 16px;
+  }
+
+  .lease-list__links {
+    display: grid;
+    justify-items: center;
+    border-radius: 30px;
+    padding: 10px;
+    row-gap: 10px;
+    border: 3px solid #f2f2f2;
+    background-color: rgb(212, 214, 216);
+    width: 200px;
+  }
+
+  .lease-price__img {
+    font-size: 24px;
+    color: rgb(12, 148, 211);
+  }
+
+  /* SALE === SALE === SALE === SALE === */
+
+  .sale__img {
+    width: 150px;
+    height: 150px;
+    border-radius: 70px;
+    /* transition: ease-in-out all 0.3s; */
+  }
+
+  .sale-title__container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .sale__title {
+    color: rgb(12, 148, 211);
+    font-size: 32px;
+    font-weight: 800;
+    border-bottom-style: solid;
+  }
+
+  .sale__list {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 16px;
+  }
+
+  .sale-list__links {
+    display: grid;
+    justify-items: center;
+    border-radius: 30px;
+    padding: 10px;
+    row-gap: 10px;
+    border: 3px solid #f2f2f2;
+    background-color: rgb(212, 214, 216);
+    width: 200px;
+  }
+
+  .sale-price__img {
+    font-size: 24px;
+    color: rgb(12, 148, 211);
+  }
+
+  /* === FOOTER === FOOTER === FOOTER */
+
+  .footer_description {
+    font-size: 16px;
+  }
+}

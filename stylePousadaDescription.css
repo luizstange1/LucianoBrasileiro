@@ -1,0 +1,400 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600;700;800&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li,
+a {
+  text-decoration: none;
+  list-style: none;
+}
+
+.nav__imgs {
+  width: 24px;
+  height: 24px;
+}
+
+body {
+  background-color: #dce0e4;
+  font-family: "Roboto Slab", serif;
+}
+
+.nav {
+  display: flex;
+  background-color: rgb(12, 148, 211);
+  height: 70px;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid white;
+}
+
+.nav__container {
+  display: flex;
+  width: 100%;
+}
+
+.nav-header__list {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.nav-header__links {
+  display: flex;
+}
+
+.nav__links {
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  transition: all ease-in-out 0.3s;
+  align-items: center;
+  display: flex;
+  column-gap: 10px;
+}
+
+.nav__links:hover {
+  color: rgb(45, 45, 51);
+}
+
+.background__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  background: url("http://www.osmais.com/wallpapers/201809/praia-mar-azul-wallpaper.jpg");
+  background-position: center;
+}
+
+/* RENT === RENT === RENT === */
+
+.pousadaDescription {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  row-gap: 24px;
+}
+
+.rent-title__container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.rent__title {
+  color: rgb(12, 148, 211);
+  font-size: 32px;
+  font-weight: 800;
+}
+
+.rent {
+  display: flex;
+  width: 100%;
+  max-width: 1080px;
+  border: 3px solid #f2f2f2;
+  border-radius: 30px;
+}
+
+.rent__img {
+  width: 500px;
+  height: 500px;
+  border-radius: 30px 0 0 30px;
+  /* transition: transform 0.25s ease;
+  cursor: zoom-in; */
+}
+
+/* .rent__img:active {
+  -webkit-transform: scale(2);
+  transform: scale(1.2);
+  cursor: zoom-out;
+}
+ */
+.rent-description__container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: rgb(147, 221, 255);
+  border-radius: 0 30px 30px 0;
+}
+
+.rent-subtitle {
+  font-size: 24px;
+}
+
+.rent__description {
+  width: 300px;
+  word-spacing: 5px;
+  line-height: 24px;
+}
+
+.rent__price {
+  font-size: 32px;
+  border-bottom-style: solid;
+  border-color: rgb(12, 148, 211);
+}
+
+.rent-button_negociation {
+  /* height: 100px;
+  width: 800px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: ease-in-out all 0.5s;
+}
+
+.rent-button__text {
+  height: 80px;
+  width: 1000px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(12, 148, 211);
+  color: white;
+  font-size: 24px;
+}
+
+.rent-button_negociation:hover {
+  filter: brightness(120%);
+}
+
+/* === FOOTER === FOOTER === FOOTER === FOOTER === FOOTER === FOOTER */
+
+.footer {
+  background-color: rgb(12, 148, 211);
+  height: 70px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer_description {
+  color: white;
+  font-size: 24px;
+}
+
+/* === MEDIA QUERIE === MEDIA QUERIE === MEDIA QUERIE === MEDIA QUERIE === MEDIA QUERIE === MEDIA QUERIE === */
+
+@media (max-width: 1110px) {
+  .rent {
+    width: 910px;
+  }
+
+  .rent-button__text {
+    width: 810px;
+  }
+}
+
+@media (max-width: 920px) {
+  .rent {
+    display: flex;
+    flex-direction: column;
+    width: 720px;
+  }
+
+  .rent__img {
+    display: flex;
+    width: 100%;
+    border-radius: 30px 30px 0 0px;
+  }
+
+  .rent-description__container {
+    border-top: 2px solid white;
+    border-radius: 0 0 30px 30px;
+  }
+
+  .rent__price {
+    border-bottom-style: initial;
+  }
+
+  .rent-button__text {
+    width: 620px;
+  }
+
+  .rent__description {
+    width: 300px;
+    font-size: 16px;
+    word-spacing: 5px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 745px) {
+  .rent {
+    display: flex;
+    flex-direction: column;
+    width: 545px;
+  }
+
+  .rent__img {
+    display: flex;
+    width: 100%;
+    border-radius: 30px 30px 0 0px;
+  }
+
+  .rent-description__container {
+    border-top: 2px solid white;
+    border-radius: 0 0 30px 30px;
+  }
+
+  .rent__price {
+    border-bottom-style: initial;
+  }
+
+  .rent-button__text {
+    width: 445px;
+  }
+
+  .rent__description {
+    width: 300px;
+    font-size: 16px;
+    word-spacing: 5px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 590px) {
+  .nav {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(12, 148, 211);
+    height: 200px;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid white;
+  }
+
+  .nav__container {
+    display: flex;
+    width: 100%;
+  }
+
+  .nav-header__list {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .nav-header__links {
+    display: flex;
+  }
+
+  .rent {
+    display: flex;
+    flex-direction: column;
+    width: 390px;
+  }
+
+  .rent__img {
+    display: flex;
+    width: 100%;
+    border-radius: 30px 30px 0 0px;
+  }
+
+  .rent-description__container {
+    border-top: 2px solid white;
+    border-radius: 0 0 30px 30px;
+  }
+
+  .rent__price {
+    border-bottom-style: initial;
+  }
+
+  .rent-button__text {
+    width: 290px;
+  }
+
+  .rent__description {
+    width: 300px;
+    font-size: 16px;
+    word-spacing: 5px;
+    line-height: 24px;
+  }
+
+  .rent-button__text {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 420px) {
+  .nav {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(12, 148, 211);
+    height: 200px;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid white;
+  }
+
+  .nav__container {
+    display: flex;
+    width: 100%;
+  }
+
+  .nav-header__list {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .nav-header__links {
+    display: flex;
+  }
+
+  .rent {
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+  }
+
+  .rent__img {
+    display: flex;
+    width: 100%;
+    border-radius: 30px 30px 0 0px;
+    width: 220px;
+    height: 220px;
+  }
+
+  .rent-description__container {
+    border-top: 2px solid white;
+    border-radius: 0 0 30px 30px;
+  }
+
+  .rent-subtitle {
+    font-size: 16px;
+  }
+
+  .rent__price {
+    border-bottom-style: initial;
+  }
+
+  .rent-button__text {
+    width: 290px;
+  }
+
+  .rent__description {
+    width: 200px;
+    font-size: 16px;
+    word-spacing: 5px;
+    line-height: 24px;
+  }
+
+  .rent-button__text {
+    font-size: 16px;
+  }
+}
